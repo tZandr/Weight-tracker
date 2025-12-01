@@ -26,7 +26,12 @@ form {
   text-align: center;
 }
 
-#historyHome {
-  padding-top: 25px;
+#weightContainer {
+  display: flex;
+  width: 50%;
   text-align: center;
+  margin-top: 25px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: space-around;
 }
