@@ -11,20 +11,29 @@
       <div class="logo">
         <h1>Weight Tracker</h1>
       </div>
-      <div id="weightEntry">
-        <form>
-          <input type="text" id="input" />
-          <input type="submit" value="Today's Weight" id="submit" />
-        </form>
-      </div>
-      <div id="weightContainer">
-        <div class="weightDisplay" id="todayHome">
-          <p>- Today's weight -</p>
-          <h3 id="today"></h3>
+
+      <div id="historyContainer">
+        <div id="historyHeader">
+          <p><strong>History</strong></p>
+          <p id="plusButton"><strong>+</strong></p>
         </div>
-        <div class="weightDisplay" id="weeklyHome">
-          <p>- This week's avg -</p>
-          <h3 id="weekAvg"></h3>
+        <div id="historyEntries">
+          <ul></ul>
+        </div>
+      </div>
+      <div>
+        <div id="weightEntry">
+          <div class="wEntryHeader">
+            <p>Weight</p>
+            <p id="wEntryDate">xx-yy-zz</p>
+          </div>
+          <form>
+            <input type="text" id="inputField" />
+            <div id="wEntryButtons">
+              <button id="cancel">Cancel</button>
+              <input type="submit" value="Save" id="submit" />
+            </div>
+          </form>
         </div>
       </div>
     </main>

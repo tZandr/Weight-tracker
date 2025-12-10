@@ -3,8 +3,10 @@ const submit = document.querySelector("#submit");
 const today = document.querySelector("#todayHome");
 const weekAvg = document.querySelector("#weekAvg");
 let todaysWeight = document.querySelector("#today");
+const plusButton = document.querySelector("#plusButton")
+const popUpEntry = document.querySelector('#weightEntry')
 
-const weekWeights = [91, 91, 91, 91, 91, 91, 91];
+const weekWsaeights = [91, 91, 91, 91, 91, 91, 91];
 // Can't calc with empty slots,
 // Next fix is to filter out empty slots so avg always works
 
@@ -50,3 +52,9 @@ Gets a new integer depending on day
   const idag = new Date()
   console.log(idag.getDay())
 */
+
+plusButton.addEventListener("click", () => {
+  console.log('omg hi')
+  popUpEntry.classList.toggle("active")
+  inputBox.classList.add('popUp')
+})
