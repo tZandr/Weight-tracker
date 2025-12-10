@@ -19,8 +19,6 @@ main {
   margin: 20px;
 }
 
-
-
 #weightContainer {
   display: flex;
   width: 50%;
@@ -41,14 +39,14 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  width: 300px;
+  width: 80%;
   height: 110px;
   border: 1px solid black;
   background-color: rgb(204, 204, 204);
   padding: 10px;
 }
 
-#weightEntry.active{
+#weightEntry.active {
   display: flex;
 }
 
@@ -68,27 +66,34 @@ form {
 
 #inputField {
   text-align: center;
-  width: 278px;
+  width: 320px;
   height: 25px;
   border-radius: 3px;
-  border: 1px solid black;;
+  border: 1px solid black;
   margin-bottom: 10px;
+}
+
+#hoverText {
+  position: fixed;
+  top: 50%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
 }
 
 #wEntryButtons {
   display: flex;
   justify-content: flex-end;
-
 }
 
-#submit, #cancel {
+#submit,
+#cancel {
   width: 30px;
   margin-left: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
-
 
 /* History container */
 #historyContainer {

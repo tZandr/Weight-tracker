@@ -10,14 +10,14 @@ const weekWsaeights = [91, 91, 91, 91, 91, 91, 91];
 // Can't calc with empty slots,
 // Next fix is to filter out empty slots so avg always works
 
-// Load locally stored weights
+/* Load locally stored weights
 document.addEventListener("DOMContentLoaded", () => {
   let todaySaved = localStorage.getItem("todaySaved");
   let last7days = localStorage.getItem("last7days");
   todaysWeight.innerHTML = todaySaved;
   weekAvg.innerHTML = last7days;
   console.log("Localstorage loaded:", todaySaved, "kg");
-});
+}); */
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
@@ -54,7 +54,5 @@ Gets a new integer depending on day
 */
 
 plusButton.addEventListener("click", () => {
-  console.log('omg hi')
   popUpEntry.classList.toggle("active")
-  inputBox.classList.add('popUp')
 })
